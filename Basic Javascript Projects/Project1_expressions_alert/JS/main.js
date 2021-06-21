@@ -2,6 +2,8 @@ var X=("Hello, world!");
 var X= X.fontcolor("pink"); //Making the font color pink
 document.write(X); 
 
+window.alert("Welcome to this page!")
+
 var A="This is a string";
 var A= A.fontcolor("red"); //Making the font color red
 document.write(A);
@@ -14,7 +16,7 @@ var D=("\"Do whatever you want to do,"+"because at the end who\'s there for you?
 var D= D.fontcolor("cyan"); //Making the font color cyan
 document.write(D);
 
-var B="Concatenated"+"String";
+var B="Sun"+"day";
 var B= B.fontcolor("purple"); //Making the font color purple
 document.write(B);
 
@@ -23,3 +25,7 @@ var Lakers= Lakers.fontcolor("green"); //Making the font color green
 document.write(Lakers);
 
 document.write(10 + 5); //An expression adding two numbers
+
+let myAge= 25; //I am 25 years old
+console.log("I am" + myAge + "years old");
+document.write(myAge);
