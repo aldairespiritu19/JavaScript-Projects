@@ -19,3 +19,15 @@ function count_Function() { //Calls a function
     }
     
 }
+
+function Vehicle(Make, Model, Year, Color) {
+    this.Vehicle_Make = Make;
+    this.Vehicle_Model = Model;
+    this.Vehicle_Year = Year;
+    this.Vehicle_Color = Color;
+}
+var Dan = new Vehicle("Honda", "Accord", 2021, "Silver");
+var Ben = new Vehicle("Acura", "Tlx", 2020, "White");
+function myFunction() {
+    document.getElementById("Keywords_and_Constructors").innerHTML = "Dan drives a " + Dan.Vehicle_Color + "-colored " + Dan.Vehicle_Model + " manufactured in " + Dan.Vehicle_Year;
+}
