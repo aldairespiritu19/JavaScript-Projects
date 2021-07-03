@@ -72,9 +72,9 @@ function Handle_Operator(Next_Operator) {
 
       '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
 
-      '+': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
+      '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
 
-      '-': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
+      '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
 
       '=': (First_Operand, Second_Operand) => Second_Operand
     };
@@ -113,6 +113,12 @@ function Handle_Operator(Next_Operator) {
       Input_Decimal(target.value);
       Update_Display();
         return;  
+      }
+      // ensures that AC clears the numbers from the Calculator
+      if (target.classList.contains('all-clear')) {
+        Calculator_Reset();
+        Update_Display();
+        return;
       }
 
       Input_Digit(target.value);
